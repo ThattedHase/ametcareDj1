@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AmetCare</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+<body>
+  <footer class="nav1">
+    <button id="footer-register-button" type="button">
+      <img src="{% static 'img/next.png' %}" class="back_img" onclick="submitForm()">
+    </button>
+  </footer>
+  <a href="http://127.0.0.1:8000/userinfo" class="back">
+    <img src="{% static 'img/arrback.png' %}">
+  </a>
+  <div class="container">
+    <div id="slText">Выберите ваши личные предпочтения</div>
+    <form action="/indpref" id="registration-form2" method="post">
+        {% csrf_token %}
+        {{ form.preferences }}
+      <button type="submit" style="display: none;"></button>
+    </form>
+  </div>
+  <script>
+    function submitForm() {
+      document.getElementById('registration-form2').submit();
+    }
+  </script>
+
+</body>
+</html>
