@@ -218,9 +218,13 @@ form input[type="checkbox"]:checked
   font-family: 'Nunito ExtraBold';
   background-image: url('/static/img/check-box.svg');
  }
+
 form label
 {
+  color:rgba(89, 197, 235);
+  font-size: 100px;
   font-family: 'Nunito ExtraBold';
+
 }
 
 .scrollable-container {

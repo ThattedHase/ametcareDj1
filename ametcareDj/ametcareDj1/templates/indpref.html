@@ -17,15 +17,17 @@
   </a>
   <div class="container">
     <div id="slText">Выберите ваши личные предпочтения</div>
-    <form action="/indpref" id="registration-form2" method="post">
+    <form action="/indpref" id="registration-form" method="post">
+      <div id = scrollable-container>
         {% csrf_token %}
         {{ form.preferences }}
+      </div>
       <button type="submit" style="display: none;"></button>
     </form>
   </div>
   <script>
     function submitForm() {
-      document.getElementById('registration-form2').submit();
+      document.getElementById('registration-form').submit();
     }
   </script>
 
