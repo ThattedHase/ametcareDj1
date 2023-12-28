@@ -33,7 +33,7 @@ class UserInfo(forms.Form):
     )
     age = forms.IntegerField(
         widget=forms.NumberInput(attrs={'class': 'registration-form-input'}),
-        label='Возраст: '
+        label='Возраст:'
     )
     task = forms.ChoiceField(
         choices=TASK_CHOICES,
@@ -65,5 +65,5 @@ class PreferencesForm(forms.Form):
 
     preferences = forms.MultipleChoiceField(
         choices=PREFERENCES_CHOICES,
-        widget=forms.CheckboxSelectMultiple(attrs={'id': 'check_input'}),
+        widget=forms.CheckboxSelectMultiple(attrs={'class': 'check_input'}),
     )

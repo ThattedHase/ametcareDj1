@@ -17,13 +17,14 @@
   </a>
   <div class="container">
     <div id="slText">Выберите ваши личные предпочтения</div>
-    <form action="/indpref" id="registration-form" method="post">
-      <div id = scrollable-container>
+    <div class="scrollable-container">
+      <form action="/indpref" id="registration-form" method="post">
         {% csrf_token %}
-        {{ form.preferences }}
-      </div>
-      <button type="submit" style="display: none;"></button>
-    </form>
+        {{ form.preferences }}    
+        <button type="submit"></button>
+      </form>
+    </div>
+    
   </div>
   <script>
     function submitForm() {

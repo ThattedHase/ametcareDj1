@@ -18,7 +18,7 @@
 
   <div class="container">
     <div id="slText">Основная информация</div>
-  <form id = "registration-form1" action="/userinfo" method="POST" class="registration-form">
+  <form action="/userinfo" method="POST" id="registration-form1" class="registration-form1">
       {% csrf_token %}
         {{ form.gender.label_tag }}
         {{ form.gender }}

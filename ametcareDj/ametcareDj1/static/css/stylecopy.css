@@ -8,6 +8,8 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,800&family=Nunito:wght@200;1000&display=swap');
+
 body 
 {
   margin: 0px;
@@ -22,6 +24,8 @@ body
   align-items: center;
   height: 100vh;
   margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
 }
 .container 
 {
@@ -40,19 +44,12 @@ body
 
   
 
-@font-face 
-{
-  font-family: 'Nunito ExtraBold';
-  src:
-      url("/Users/vizilo/Downloads/ametCare1/fonts/Nunito-ExtraBold.woff2") format('woff2'),
-      url("/Users/vizilo/Downloads/ametCare1/fonts/Nunito-ExtraBold.woff") format('woff');
-}
 #title
 {
   color: rgba(43, 198, 160, 1);
   font-size: 40px; 
   width: 816px;
-  font-family: 'Nunito ExtraBold';
+  font-weight: 900;
   margin-bottom: 300px;
 }
 
