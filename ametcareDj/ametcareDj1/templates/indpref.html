@@ -18,14 +18,17 @@
   <div class="container">
     <div id="slText">Выберите ваши личные предпочтения</div>
     <div class="scrollable-container">
-      <form action="/indpref" id="registration-form" method="post">
-        {% csrf_token %}
-        {{ form.preferences }}    
-        <button type="submit"></button>
-      </form>
-    </div>
-    
+      {% csrf_token %}
+      {% for choice in form.preferences %}
+      <label class="checkbox-container">
+          <input type="checkbox" name="{{ choice.name }}" value="{{ choice.value }}">
+          <div class="checkmark"></div>
+          {{ choice }}
+      </label>
+      {% endfor %}
   </div>
+</div>
+
   <script>
     function submitForm() {
       document.getElementById('registration-form').submit();

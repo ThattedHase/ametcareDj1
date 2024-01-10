@@ -222,41 +222,35 @@ button[type="button"]
   font-weight: 400;
   font-family: 'Nunito', sans-serif;
 }
-.check_input {
+.checkbox-container {
+  display: flex;
+  align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-container .checkmark {
   display: inline-block;
+  background: url("/static/img/cb1.svg") no-repeat;
+  height: 120px;
+  width: 120px;
+  background-size: 50%;
 }
 
-.check_input input {
-  opacity: 0;
-  position: absolute;
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+  background: url("/static/img/cb2.svg") no-repeat;
+  display: inline-block;
+  height: 125px;
+  width: 125px;
+  background-size: 50%;
 }
 
-.check_input label {
-  position: relative;
-  cursor: pointer;
-  padding-left: 30px; /* Adjust spacing as needed */
-  line-height: 1.5; /* Adjust based on the size of the checkbox */
-  font-size: 45px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-}
 
-.check_input label:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px; /* Adjust width based on the size of the checkbox */
-  height: 20px; /* Adjust height based on the size of the checkbox */
-  border: 2px solid #333; /* Border color for the checkbox */
-  background-color: #fff; /* Background color for the checkbox */
-}
 
-/* Checked state */
-.check_input input:checked {
-  background-color: #00a0d2; /* Change background color for the checked state */
-  border-color: #00a0d2; /* Change border color for the checked state */
-}
+
+
 
 .card-stack {
   display: flex;
