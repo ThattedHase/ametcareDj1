@@ -41,8 +41,8 @@ def userinfo(request):
 
 def indpref(request):
     if request.method == "POST":
-        pref = request.POST.getlist("preferences")
-        return HttpResponse("<h2>Hello, {0}</h2>".format(pref))
+        preferences = request.POST.getlist("preferences")
+        return HttpResponse("<h2>Hello, {0}</h2>".format(preferences))
     else:
         form = PreferencesForm()
         return render(request, "indpref.html", {"form": form})

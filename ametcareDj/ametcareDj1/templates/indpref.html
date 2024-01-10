@@ -15,19 +15,25 @@
   <a href="http://127.0.0.1:8000/userinfo" class="back">
     <img src="{% static 'img/arrback.png' %}">
   </a>
-  <div class="container">
-    <div id="slText">Выберите ваши личные предпочтения</div>
-    <div class="scrollable-container">
-      {% csrf_token %}
-      {% for choice in form.preferences %}
-      <label class="checkbox-container">
-          <input type="checkbox" name="{{ choice.name }}" value="{{ choice.value }}">
-          <div class="checkmark"></div>
-          {{ choice }}
-      </label>
-      {% endfor %}
-  </div>
-</div>
+    <div class="container">
+      <div id="slText">Выберите ваши личные предпочтения</div>
+      <div class="scrollable-container">
+        <form id="registration-form" method="post" action="indpref">
+          {% csrf_token %}
+          <div class="checkbox-container">
+            {% for choice in form.preferences %}
+              <label class="checkbox-label">
+                <input type="checkbox" name="{{ choice.name }}" value="{{ choice.value }}">
+                <span class="checkmark"></span>
+                {{ choice.label }}
+              </label>
+            {% endfor %}
+          </div>
+        </form>
+      </div>
+    </div>
+    
+  
 
   <script>
     function submitForm() {

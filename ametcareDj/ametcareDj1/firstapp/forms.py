@@ -71,4 +71,22 @@ class PreferencesForm(forms.Form):
     preferences = forms.MultipleChoiceField(
         choices=PREFERENCES_CHOICES,
         widget=forms.CheckboxSelectMultiple(attrs={'class': 'check_input'}),
+        required=False,
+
+    )
+
+class AllergyForm(forms.Form):
+    ALLERGIES_CHOICES = [
+        ("Яблоки", "Яблоки"),
+        ("Глютен", "Глютен"),
+        ("Лактоза", "Лактоза"),
+        ("Морепродукты", "Морепродукты"),
+        ("Соя", "Соя"),
+        ("Яйцо", "Яйцо"),
+        ("Орехи", "Орехи"),
+    ]
+
+    allergies = forms.MultipleChoiceField(
+        choices=ALLERGIES_CHOICES,
+        widget=forms.CheckboxSelectMultiple(attrs={'class': 'check_input'}),
     )
