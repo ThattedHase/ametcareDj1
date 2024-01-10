@@ -224,39 +224,6 @@ button[type="button"]
 }
 .checkbox-container {
   display: flex;
-  flex-direction: column;
-}
-
-.checkbox-label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px; /* Adjust as needed */
-  cursor: pointer;
-}
-
-.checkbox-container input[type="checkbox"] {
-  display: none;
-}
-
-.checkbox-container .checkmark {
-  display: inline-block;
-  background: url("/static/img/cb1.svg") no-repeat;
-  height: 120px;
-  width: 120px;
-  background-size: 50%;
-  margin-right: 10px; /* Adjust as needed */
-}
-
-.checkbox-container input[type="checkbox"]:checked + .checkmark {
-  background: url("/static/img/cb2.svg") no-repeat;
-  height: 125px;
-  width: 125px;
-  background-size: 50%;
-}
-
-/* Adjust the position of the checkmark based on your design */
-.checkbox-container input[type="checkbox"]:not(:checked) + .checkmark {
-  opacity: 0; /* Hide the checkmark for unchecked checkboxes */
 }
 
 

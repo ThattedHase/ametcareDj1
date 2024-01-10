@@ -22,11 +22,11 @@
           {% csrf_token %}
           <div class="checkbox-container">
             {% for choice in form.preferences %}
-              <label class="checkbox-label">
-                <input type="checkbox" name="{{ choice.name }}" value="{{ choice.value }}">
-                <span class="checkmark"></span>
-                {{ choice.label }}
-              </label>
+            {{ choice }}
+            <span class="checkmark1">{{% choice.1 %}}</span>
+            <span class="checkmark2">df</span>
+
+
             {% endfor %}
           </div>
         </form>
