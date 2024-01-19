@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
-body
-{
+
+body {
   margin: 0px;
   padding: 0;
   display: flex;
@@ -9,51 +9,47 @@ body
   font-weight: 400;
 }
 
-.content 
-{
+.content {
   flex: 1;
   padding: 20px;
 }
-.container 
-{
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
 }
-.back
-{
+
+.back {
   margin-top: 50px;
   margin-left: 50px;
 }
 
-.center-image 
-{
+.center-image {
   max-width: 40%;
   height: auto;
-  margin-top:600px;
+  margin-top: 600px;
 }
-.back_img
-{
+
+.back_img {
   width: 50%;
   height: 50%;
 }
 
 @media screen and (max-height: 720px) and (max-width: 360px) {
   .center-container img {
-      max-width: 90%; /* Увеличьте размер изображения для мобильных устройств */
+    max-width: 90%; /* Увеличьте размер изображения для мобильных устройств */
   }
 }
 
-p.center-text 
-{
+p.center-text {
   text-align: center;
   color: rgba(43, 198, 160, 1);
-  font-size: 50px; 
+  font-size: 50px;
   width: 12em;
   margin-top: 100px;
   font-weight: 700;
-
 }
 
 .navigation {
@@ -62,44 +58,36 @@ p.center-text
   justify-content: space-around;
   align-items: center;
   border-top-left-radius: 20px; /* Закругление верхнего левого угла */
-  border-top-right-radius: 20px;  position: fixed;
+  border-top-right-radius: 20px;
+  position: fixed;
   bottom: 0px; /* Отступ от нижнего края */
   left: 0;
   right: 0;
   height: 8%;
 }
 
-.buts
-{
+.buts {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-#title
-{
+#title {
   color: rgba(43, 198, 160, 1);
   font-size: 80px;
-  padding-top: 58px; 
+  padding-top: 58px;
   padding-left: 58px;
   font-weight: 900;
 }
 
-
-
-
-.registration-form label 
-{
+.registration-form label {
   display: block;
   font-size: 40px;
   font-weight: 700;
   color: rgba(89, 197, 235);
-  
 }
 
-
-.registration-form input
-{
+.registration-form input {
   font-weight: 900;
   color: rgba(43, 198, 160, 1);
   width: 100%;
@@ -110,13 +98,14 @@ p.center-text
   border-bottom: 5px solid rgba(89, 197, 235); /* Добавляем нижнюю линию */
   background: transparent; /* Прозрачный фон */
   outline: none; /* Убираем контур фокуса */
-  border-radius:20px;
+  border-radius: 20px;
 }
+
 .registration-form select {
   font-weight: 900;
   color: rgba(43, 198, 160, 1);
   width: 100%;
-  height:150px;
+  height: 150px;
   padding: 10px;
   font-size: 40px;
   margin-bottom: 20px;
@@ -125,21 +114,19 @@ p.center-text
   background: transparent;
   outline: none;
 }
+
 .registration-form select option {
   font-weight: 200;
-  font-size: 20px; 
+  font-size: 20px;
 }
 
-button[type="button"] 
-{
-  background-color: transparent; 
-  border: none; 
+button[type="button"] {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
-
-#slText
-{
+#slText {
   color: rgba(43, 198, 160, 1);
   font-size: 58px;
   margin-bottom: 200px;
@@ -152,7 +139,6 @@ button[type="button"]
   width: 12em;
   text-align: center;
 }
-
 
 .nav1 {
   background-color: rgba(89, 197, 235, 0.5);
@@ -168,23 +154,24 @@ button[type="button"]
   height: 10%;
   text-align: center; /* Выравнивание текста по центру */
 }
+
 .nav1 a img {
   transform: scale(1.3); /* Увеличьте размер картинки в 1.5 раза */
 }
-#registration-form1 label
-{
-  color:rgba(89, 197, 235);
+
+#registration-form1 label {
+  color: rgba(89, 197, 235);
   font-size: 45px;
   font-weight: 900;
   font-family: 'Nunito', sans-serif;
 }
+
 #registration-form1 input,
-#registration-form1 select
-{
+#registration-form1 select {
   font-weight: 400;
   color: rgba(43, 198, 160, 1);
   width: 100%;
-  height:80px;
+  height: 80px;
   padding: 10px;
   font-size: 45px;
   margin-bottom: 20px;
@@ -195,49 +182,40 @@ button[type="button"]
   font-family: 'Nunito', sans-serif;
 }
 
-
-#registration-form1 option
-{
+#registration-form1 option {
   font-size: 30px;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
 }
 
-#registration-form label
-{
+#registration-form label {
   font-size: 45px;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
 }
-
 
 .scrollable-container {
-  max-height: 900px; 
+  max-height: 900px;
   width: 80%;
-  overflow-y: auto; 
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
-  color:rgba(89, 197, 235);
+  color: rgba(89, 197, 235);
   font-size: 45px;
   font-weight: 400;
   font-family: 'Nunito', sans-serif;
 }
+
 .checkbox-container {
   display: flex;
 }
-
-
-
 
 .card-stack {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 60px;
-
 }
-
-
 
 .card {
   width: 800px;
@@ -246,7 +224,7 @@ button[type="button"]
   color: rgb(255, 255, 255);
   font-weight: 900;
   padding-top: 20px;
-  padding-left: 30px;;
+  padding-left: 30px;
   font-size: 40px;
   margin: 5px;
   display: none;
@@ -263,7 +241,7 @@ button[type="button"]
   color: rgb(255, 255, 255);
   font-weight: 900;
   padding-top: 20px;
-  padding-left: 30px;;
+  padding-left: 30px;
   font-size: 40px;
   margin: 5px;
   display: none;
@@ -272,6 +250,7 @@ button[type="button"]
   animation-duration: 0.5s;
   border-radius: 50px;
 }
+
 .card2 {
   width: 800px;
   height: 300px;
@@ -279,7 +258,7 @@ button[type="button"]
   color: rgb(255, 255, 255);
   font-weight: 900;
   padding-top: 20px;
-  padding-left: 30px;;
+  padding-left: 30px;
   font-size: 40px;
   margin: 5px;
   display: none;
@@ -288,42 +267,45 @@ button[type="button"]
   animation-duration: 0.5s;
   border-radius: 50px;
 }
-.buttons 
-{
+
+.buttons {
   padding: 75px;
   justify-content: center;
   align-items: center;
-
 }
+
 .card img {
   width: 200px; /* Установите желаемую ширину */
   height: 200px; /* Установите желаемую высоту */
   display: block; /* Помещаем изображение под текстом */
   margin-top: 10px;
 }
+
 .card1 img {
   width: 200px; /* Установите желаемую ширину */
   height: 200px; /* Установите желаемую высоту */
   display: block; /* Помещаем изображение под текстом */
   margin-top: 10px;
 }
+
 .card2 img {
   width: 200px; /* Установите желаемую ширину */
   height: 200px; /* Установите желаемую высоту */
   display: block; /* Помещаем изображение под текстом */
   margin-top: 10px;
 }
-#card_text
-{
+
+#card_text {
   color: rgb(255, 255, 255);
   font-size: 30px;
   margin-bottom: 150px;
-  font-family: 'Nunito ExtraBold'; 
+  font-family: 'Nunito ExtraBold';
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; /* Предотвращаем перекрытие текста и изображения */
 }
+
 .card-details {
   /* Стили для контейнера с дополнительными данными (время приготовления и калорийность) */
   display: flex; /* Включаем flexbox */

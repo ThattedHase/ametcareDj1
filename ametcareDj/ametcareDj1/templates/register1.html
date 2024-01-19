@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Django Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form method="POST">
-        {% csrf_token %}
-    <table>
+      {% csrf_token %}
+      <table>
         {{ form }}
-    </table>
-    <input type="submit" value="Send" >
-</form>
-</body>
+      </table>
+      <input type="submit" value="Send" >
+    </form>
+  </body>
 </html>

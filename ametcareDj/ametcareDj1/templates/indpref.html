@@ -1,20 +1,19 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>AmetCare</title>
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-</head>
-<body>
-  <footer class="nav1">
-    <button id="footer-register-button" type="button">
+  <head>
+    <title>AmetCare</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <footer class="nav1">
+      <button id="footer-register-button" type="button">
       <img src="{% static 'img/next.png' %}" class="back_img" onclick="submitForm()">
-    </button>
-  </footer>
-  <a href="http://127.0.0.1:8000/userinfo" class="back">
+      </button>
+    </footer>
+    <a href="http://127.0.0.1:8000/userinfo" class="back">
     <img src="{% static 'img/arrback.png' %}">
-  </a>
+    </a>
     <div class="container">
       <div id="slText">Выберите ваши личные предпочтения</div>
       <div class="scrollable-container">
@@ -25,21 +24,15 @@
             {{ choice }}
             <span class="checkmark1">{{% choice.1 %}}</span>
             <span class="checkmark2">df</span>
-
-
             {% endfor %}
           </div>
         </form>
       </div>
     </div>
-    
-  
-
-  <script>
-    function submitForm() {
-      document.getElementById('registration-form').submit();
-    }
-  </script>
-
-</body>
+    <script>
+      function submitForm() {
+        document.getElementById('registration-form').submit();
+      }
+    </script>
+  </body>
 </html>

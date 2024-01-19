@@ -1,17 +1,15 @@
-@keyframes fadeIn 
-{
+@keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,800&family=Nunito:wght@200;1000&display=swap');
 
-body 
-{
+body {
   margin: 0px;
   padding: 0;
   height: 100%;
@@ -27,41 +25,35 @@ body
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
 }
-.container 
-{
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.but
-{
+
+.but {
   margin-top: 25px;
-  display: flex; 
+  display: flex;
   align-items: center
 }
 
-  
-
-#title
-{
+#title {
   color: rgba(43, 198, 160, 1);
-  font-size: 40px; 
+  font-size: 40px;
   width: 816px;
   font-weight: 900;
   margin-bottom: 300px;
 }
 
-
-.icon-button 
-{
+.icon-button {
   width: 50%; /* Размер кнопок */
   height: 50%; /* Размер кнопок */
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   border: none;
   cursor: pointer;
-  
 }

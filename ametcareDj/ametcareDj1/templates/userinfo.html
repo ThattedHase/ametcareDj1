@@ -2,24 +2,23 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-  <title>AmetCare</title>
+  <head>
+    <title>AmetCare</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-</head>
-<body>
-  <footer class="nav1">
-    <button id = "registration-button" type="button">
+  </head>
+  <body>
+    <footer class="nav1">
+      <button id = "registration-button" type="button">
       <img src="{% static 'img/next.png' %}" class= "back_img" onclick="submitForm()">
-    </button>
-  </footer>
-  <a href="http://127.0.0.1:8000/register" class="back">
-      <img src="{% static 'img/arrback.png' %}">
-  </a> 
-
-  <div class="container">
-    <div id="slText">Основная информация</div>
-  <form action="/userinfo" method="POST" id="registration-form1" class="registration-form1">
-      {% csrf_token %}
+      </button>
+    </footer>
+    <a href="http://127.0.0.1:8000/register" class="back">
+    <img src="{% static 'img/arrback.png' %}">
+    </a>
+    <div class="container">
+      <div id="slText">Основная информация</div>
+      <form action="/userinfo" method="POST" id="registration-form1" class="registration-form1">
+        {% csrf_token %}
         {{ form.gender.label_tag }}
         {{ form.gender }}
         <br><br>
@@ -35,12 +34,12 @@
         {{ form.task.label_tag }}
         {{ form.task }}
         <br><br>
-  </form>
-  </div>
-  <script>
-    function submitForm() {
-      document.getElementById('registration-form1').submit();
-    }
+      </form>
+    </div>
+    <script>
+      function submitForm() {
+          document.getElementById('registration-form1').submit();
+      }
     </script>
-</body>
+  </body>
 </html>
