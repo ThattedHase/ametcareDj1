@@ -1,3 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+#Python __pycache__ dirs
+__pycache__/
+
+#Virtual environment
+venv/
