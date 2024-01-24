@@ -1,38 +1,35 @@
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>AmetCare</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-  </head>
-  <body>
-    <footer class="nav1">
-      <button id="footer-register-button" type="button">
+{% extends "base.html" %}
+
+{% block title %}AmetCare{% endblock %}
+
+{% block content %}
+  <footer class="nav1">
+    <button id="footer-register-button" type="button">
       <img src="{% static 'img/next.png' %}" class="back_img" onclick="submitForm()">
-      </button>
-    </footer>
-    <a href="http://127.0.0.1:8000/userinfo" class="back">
+    </button>
+  </footer>
+  <a href="http://127.0.0.1:8000/userinfo" class="back">
     <img src="{% static 'img/arrback.png' %}">
-    </a>
-    <div class="container">
-      <div id="slText">Выберите ваши личные предпочтения</div>
-      <div class="scrollable-container">
-        <form id="registration-form" method="post">
-        {% csrf_token %}
-        {% for choice in form.preferences %}
-        <label class="checkbox-container">
-          <input type="checkbox" name="{{ choice.name }}" value="{{ choice.value }}">
-          <div class="checkmark"></div>
-          {{ choice }}
-        </label>
-        {% endfor %}
-      </div>
+  </a>
+  <div class="container">
+    <div id="slText">Выберите ваши личные предпочтения</div>
+    <div class="scrollable-container">
+      <form id="registration-form" method="post">
+      {% csrf_token %}
+      {% for choice in form.preferences %}
+      <label class="checkbox-container">
+        <input type="checkbox" name="{{ choice.name }}" value="{{ choice.value }}">
+        <div class="checkmark"></div>
+        {{ choice }}
+      </label>
+      {% endfor %}
     </div>
-    <script>
-      function submitForm() {
-        document.getElementById('registration-form').submit();
-      }
-    </script>
-  </body>
-</html>
+  </div>
+  <script>
+    function submitForm() {
+      document.getElementById('registration-form').submit();
+    }
+  </script>
+{% endblock %}

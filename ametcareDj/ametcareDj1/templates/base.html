@@ -1,0 +1,14 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/stylescopy.css' %}"> -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/nunito?styles=19286,19289,19277">
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>

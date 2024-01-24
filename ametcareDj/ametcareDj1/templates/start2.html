@@ -1,22 +1,16 @@
+{% extends "base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>AmetCare</title>
-    <link rel="stylesheet" href="{% static 'css/stylecopy.css' %}" />
-  </head>
-  <body>
-    <div class="container">
-      <div id = "title">Получите индивидуальный план питания на основе вашего личного 
-        “Портрета желаний”
-      </div>
-      <a href="http://127.0.0.1:5000/login" class="but">
-      <img src="{% static 'img/login.png' %}" class="center-image">
-      </a>
-      <a href="http://127.0.0.1:5000/register" class = "but">
-      <img src="{% static 'img/signin.png' %}" class="center-image">
-      </a>
-    </div>
-  </body>
-</html>
+{% block title %}AmetCare{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div id = "title">Получите индивидуальный план питания на основе вашего личного “Портрета желаний”</div>
+    <a class="but" href="http://127.0.0.1:5000/login">
+      <img class="center-image" src="{% static 'img/login.png' %}">
+    </a>
+    <a class = "but" href="http://127.0.0.1:5000/register">
+      <img class="center-image" src="{% static 'img/signin.png' %}">
+    </a>
+  </div>
+{% endblock %}

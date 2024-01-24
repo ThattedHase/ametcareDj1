@@ -1,40 +1,36 @@
+{% extends "base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>AmetCare</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-  </head>
-  <body>
-    <footer class="nav1">
-      <button id="footer-register-button" type="button">
-      <img src="{% static 'img/register.png' %}" class="back_img" onclick="submitForm()">
-      </button>
-    </footer>
-    <a href="http://127.0.0.1:8000/start2" class="back">
+{% block title %}AmetCare{% endblock %}
+
+{% block content %}
+  <footer class="nav1">
+    <button id="footer-register-button" type="button">
+      <img class="back_img" src="{% static 'img/register.png' %}" onclick="submitForm()">
+    </button>
+  </footer>
+  <a class="back" href="http://127.0.0.1:8000/start2">
     <img src="{% static 'img/arrback.png' %}">
-    </a>
-    <div class="container">
-      <div id="slText">Регистрация</div>
-      <!-- Форма регистрации -->
-      <form id="registration-form" action="/register" method="POST" class="registration-form">
-        {% csrf_token %}
-        {{ form.name.label_tag }}
-        {{ form.name }}
-        <br><br>
-        {{ form.email.label_tag }}
-        {{ form.email }}
-        <br><br>
-        {{ form.password.label_tag }}
-        {{ form.password }}
-        <br><br>
-      </form>
-    </div>
-    <script>
-      function submitForm() {
-        document.getElementById('registration-form').submit();
-      }
-    </script>
-  </body>
-</html>
+  </a>
+  <div class="container">
+    <div id="slText">Регистрация</div>
+    <!-- Форма регистрации -->
+    <form class="registration-form" id="registration-form" action="/register" method="POST">
+      {% csrf_token %}
+      {{ form.name.label_tag }}
+      {{ form.name }}
+      <br><br>
+      {{ form.email.label_tag }}
+      {{ form.email }}
+      <br><br>
+      {{ form.password.label_tag }}
+      {{ form.password }}
+      <br><br>
+    </form>
+  </div>
+  <script>
+    function submitForm() {
+      document.getElementById('registration-form').submit();
+    }
+  </script>
+{% endblock %}
