@@ -5,12 +5,14 @@
 
 {% block content %}
   <div class="container">
-    <div id = "title">Получите индивидуальный план питания на основе вашего личного “Портрета желаний”</div>
+    <div class = "slText">Получите индивидуальный план питания на основе вашего личного “Портрета желаний”</div>
+    <div class = "container1">
     <a class="but" href="http://127.0.0.1:5000/login">
       <img class="center-image" src="{% static 'img/login.png' %}">
     </a>
-    <a class = "but" href="http://127.0.0.1:5000/register">
+    <a class = "but" href="http://127.0.0.1:8000/register">
       <img class="center-image" src="{% static 'img/signin.png' %}">
     </a>
+    </div>
   </div>
 {% endblock %}

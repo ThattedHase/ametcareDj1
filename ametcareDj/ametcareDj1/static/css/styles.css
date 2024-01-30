@@ -21,15 +21,25 @@ body {
   text-align: left;
 }
 
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-top: 150px;
+  padding-top: 25px;
+}
+
+
 .back {
   margin-top: 50px;
   margin-left: 50px;
 }
 
 .center-image {
-  max-width: 40%;
+  max-width: 100%;
   height: auto;
-  margin-top: 600px;
+  margin-top: 50px;
 }
 
 .back_img {
@@ -126,7 +136,7 @@ button[type="button"] {
   cursor: pointer;
 }
 
-#slText {
+.slText {
   color: rgba(43, 198, 160, 1);
   font-size: 58px;
   margin-bottom: 200px;
