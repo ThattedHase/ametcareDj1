@@ -9,11 +9,6 @@ body {
   font-weight: 400;
 }
 
-.content {
-  flex: 1;
-  padding: 20px;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -28,6 +23,16 @@ body {
   text-align: left;
   margin-top: 150px;
   padding-top: 25px;
+}
+
+.slText {
+  color: rgba(43, 198, 160, 1);
+  font-size: 58px;
+  margin-bottom: 200px;
+  margin-top: 150px;
+  font-weight: 900;
+  width: 12em;
+  text-align: center;
 }
 
 
@@ -82,13 +87,6 @@ p.center-text {
   align-items: center;
 }
 
-#title {
-  color: rgba(43, 198, 160, 1);
-  font-size: 80px;
-  padding-top: 58px;
-  padding-left: 58px;
-  font-weight: 900;
-}
 
 .registration-form label {
   display: block;
@@ -136,19 +134,7 @@ button[type="button"] {
   cursor: pointer;
 }
 
-.slText {
-  color: rgba(43, 198, 160, 1);
-  font-size: 58px;
-  margin-bottom: 200px;
-  margin-top: 150px;
-  font-weight: 900;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 12em;
-  text-align: center;
-}
+
 
 .nav1 {
   background-color: rgba(89, 197, 235, 0.5);
